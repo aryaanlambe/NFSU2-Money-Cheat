@@ -135,6 +135,9 @@ namespace NFSU2_Money_Cheat
         private void btnCancel_Click(object sender, EventArgs e) =>
             Application.Exit();
 
+        private void lblAbout_Click(object sender, EventArgs e) =>
+    new FrmAbout().ShowDialog();
+
 
         private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -194,5 +197,7 @@ namespace NFSU2_Money_Cheat
             PrintCurrentMoney(GetSaveFileLocation());
 
         #endregion
+
+
     }
 }

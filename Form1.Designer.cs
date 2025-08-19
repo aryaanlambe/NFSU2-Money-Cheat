@@ -42,6 +42,7 @@
             dbPanelControls = new XChange_V1._0.DoubleBufferedPanel();
             btnApplyCheat = new Button();
             btnCancel = new Button();
+            lblAbout = new Label();
             dbPanelMain.SuspendLayout();
             tlpMain.SuspendLayout();
             dbPanelSelectSaveFile.SuspendLayout();
@@ -179,6 +180,7 @@
             // dbPanelControls
             // 
             dbPanelControls.BorderStyle = BorderStyle.FixedSingle;
+            dbPanelControls.Controls.Add(lblAbout);
             dbPanelControls.Controls.Add(btnApplyCheat);
             dbPanelControls.Controls.Add(btnCancel);
             dbPanelControls.Dock = DockStyle.Bottom;
@@ -210,6 +212,17 @@
             btnCancel.UseVisualStyleBackColor = true;
             btnCancel.Click += btnCancel_Click;
             btnCancel.KeyDown += General_KeyDown;
+            // 
+            // lblAbout
+            // 
+            lblAbout.Dock = DockStyle.Right;
+            lblAbout.Location = new Point(595, 0);
+            lblAbout.Name = "lblAbout";
+            lblAbout.Size = new Size(63, 53);
+            lblAbout.TabIndex = 2;
+            lblAbout.Text = "?";
+            lblAbout.TextAlign = ContentAlignment.MiddleCenter;
+            lblAbout.Click += lblAbout_Click;
             // 
             // Form1
             // 
@@ -252,5 +265,6 @@
         private XChange_V1._0.DoubleBufferedPanel dbPanelSaveFilePath;
         private Label lblSaveFilePath;
         private TextBox txtAmount;
+        private Label lblAbout;
     }
 }
