@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             dbPanelMain = new XChange_V1._0.DoubleBufferedPanel();
             tlpMain = new TableLayoutPanel();
             lblEnterAmount = new Label();
@@ -40,9 +41,9 @@
             dbPanelHeading = new XChange_V1._0.DoubleBufferedPanel();
             lblHeading = new Label();
             dbPanelControls = new XChange_V1._0.DoubleBufferedPanel();
+            lblAbout = new Label();
             btnApplyCheat = new Button();
             btnCancel = new Button();
-            lblAbout = new Label();
             dbPanelMain.SuspendLayout();
             tlpMain.SuspendLayout();
             dbPanelSelectSaveFile.SuspendLayout();
@@ -189,6 +190,17 @@
             dbPanelControls.Size = new Size(660, 55);
             dbPanelControls.TabIndex = 1;
             // 
+            // lblAbout
+            // 
+            lblAbout.Dock = DockStyle.Right;
+            lblAbout.Location = new Point(595, 0);
+            lblAbout.Name = "lblAbout";
+            lblAbout.Size = new Size(63, 53);
+            lblAbout.TabIndex = 2;
+            lblAbout.Text = "?";
+            lblAbout.TextAlign = ContentAlignment.MiddleCenter;
+            lblAbout.Click += lblAbout_Click;
+            // 
             // btnApplyCheat
             // 
             btnApplyCheat.Anchor = AnchorStyles.Top | AnchorStyles.Bottom;
@@ -213,17 +225,6 @@
             btnCancel.Click += btnCancel_Click;
             btnCancel.KeyDown += General_KeyDown;
             // 
-            // lblAbout
-            // 
-            lblAbout.Dock = DockStyle.Right;
-            lblAbout.Location = new Point(595, 0);
-            lblAbout.Name = "lblAbout";
-            lblAbout.Size = new Size(63, 53);
-            lblAbout.TabIndex = 2;
-            lblAbout.Text = "?";
-            lblAbout.TextAlign = ContentAlignment.MiddleCenter;
-            lblAbout.Click += lblAbout_Click;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(11F, 28F);
@@ -233,6 +234,7 @@
             DoubleBuffered = true;
             Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4);
             MaximizeBox = false;
             Name = "Form1";
