@@ -1,6 +1,8 @@
 # 💸NFSU2-Money-Cheat
 A lightweight Windows utility that lets you modify your in-game bank balance in *Need For Speed: Underground 2*. Select your save file, enter the desired amount, and instantly update your funds—no hex editing, no fuss.
 
+![Screenshot](Screenshots/NFSU2-Money-Cheat-Screenshot.png)
+
 ---
 
 ## 🛠 Features
