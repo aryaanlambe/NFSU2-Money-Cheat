@@ -109,6 +109,7 @@
             btnSelectSaveFile.TabIndex = 0;
             btnSelectSaveFile.Text = "&Select";
             btnSelectSaveFile.UseVisualStyleBackColor = true;
+            btnSelectSaveFile.Click += btnSelectSaveFile_Click;
             btnSelectSaveFile.KeyDown += General_KeyDown;
             // 
             // dbPanelSaveFilePath
@@ -129,6 +130,7 @@
             lblSaveFilePath.TabIndex = 1;
             lblSaveFilePath.Text = "<== SELECT SAVE FILE";
             lblSaveFilePath.TextAlign = ContentAlignment.MiddleLeft;
+            lblSaveFilePath.TextChanged += lblSaveFilePath_TextChanged;
             // 
             // txtAmount
             // 
@@ -194,6 +196,7 @@
             btnApplyCheat.TabIndex = 0;
             btnApplyCheat.Text = "<F12> &Apply Cheat";
             btnApplyCheat.UseVisualStyleBackColor = true;
+            btnApplyCheat.Click += btnApplyCheat_Click;
             btnApplyCheat.KeyDown += General_KeyDown;
             // 
             // btnCancel
